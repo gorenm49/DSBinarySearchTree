@@ -65,6 +65,7 @@ namespace DSBinarySearchTree
         
         public void Display()
         {
+            System.Console.WriteLine("Elements Are:");
             Display(root_node);
         }
     }
