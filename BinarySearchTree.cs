@@ -68,5 +68,35 @@ namespace DSBinarySearchTree
             System.Console.WriteLine("Elements Are:");
             Display(root_node);
         }
+
+        public void Search(int element)
+        {
+            if (root_node == null)
+            {   
+                System.Console.WriteLine("Array is Empty.");
+            }
+
+            if (root_node.Equals(element))
+            {
+                System.Console.WriteLine("Match found");
+            }
+
+            if (root_node.CompareTo(element))
+            {
+                
+                if (root.Right.Equals(element))
+                {
+                    System.Console.WriteLine("Match found");
+                }               
+            }
+
+            if (root_node.CompareTo(element))
+            {
+                if (root.Left.Equals(element))
+                {
+                    System.Console.WriteLine("Match found");
+                }
+            }
+        }
     }
 }

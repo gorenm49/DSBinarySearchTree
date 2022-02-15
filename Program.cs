@@ -23,6 +23,7 @@ namespace DSBinarySearchTree
             tree.InsertNode(67);
 
             tree.Display();
+            tree.Search(63);
         }
     }
 }
